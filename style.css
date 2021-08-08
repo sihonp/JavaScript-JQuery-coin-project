@@ -1,0 +1,283 @@
+.parallax {
+    background-image: url(./images/bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loadingContainer{
+    text-align: center;
+}
+
+h1 {
+    font-size:60px;
+    color: white;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.firstContainer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.switch {
+    position: relative;
+    width: 55px;
+    height: 28px;
+    float: right;
+  }
+
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 10px; 
+}
+
+.aboutContainer{
+    display: none;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 1150px;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 10px; 
+    color: white;
+    background-color: #0275d8;
+}
+
+#scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+    
+#scrollButton:hover {
+    background-color: #555;
+} 
+
+#buttonSpinner{
+    margin-left: 180px;
+}
+
+#chartContainer {
+    margin: 20px auto;
+    height: 500px;
+    width: 100%;
+    border: solid 3px white;
+}
+
+.modal-open {
+    overflow: visible;
+}
+
+.modal-backdrop {
+    position: relative;
+}
+
+.btnChanger{
+    text-align: center;
+}
+
+.moreSpinner {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 110px;
+    height: 100px;
+    width: 100px;
+    background: url('./images/Rolling.gif') no-repeat;
+    text-align: center;
+}
+
+.collapse {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-text{
+    width: 100px;
+    height: 55px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.card-text:hover {
+    overflow: auto;
+}
+
+.card{
+    display: inline-flex;
+    text-align: initial;
+    height: auto;
+ width: 400px;
+    background-color: rgb(221, 221, 221);
+    margin: 15px;
+    font-size: 15px;
+    box-shadow: 0 3px 10px rgba(104, 104, 104, 0.8);
+    align-self: start;
+}
+
+.card:hover {
+    transform: scale(1.1); 
+    background-color: #fff;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+::placeholder {
+    color: white;
+    opacity: .5;
+}
+
+ .coinImage{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 500px) {
+    .mainContainer {
+       width: 80%;
+     }
+     .card {
+         width: 70%;
+     }
+
+     .card-text{
+        width: 130px;
+        height: 55px;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-transform: uppercase;
+    }
+
+    .card-text-name{
+        width: 220px;
+        height: 55px;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-transform: uppercase;
+    }
+ }
+
+ 
+
+ @media screen and (min-width: 700px) {
+    .mainContainer {
+       width: 100%;
+     }
+     .card {
+         width: 40%;
+     }
+
+     .card-text{
+        width: 155px;
+        height: 55px;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-transform: uppercase;
+    }
+
+   
+ }
+
+ @media screen and (min-width: 970px) {
+    .mainContainer {
+       width: 95%;
+     }
+     .card {
+         width: 30%;
+     }
+ }
+
+ @media screen and (min-width: 1200px) {
+    .mainContainer {
+       width: 100%;
+     }
+     .card {
+         width: 25%;
+     }
+ }
+
+ @media screen and (min-width: 1500px) {
+    .mainContainer {
+       width: 90%;
+     }
+     .card {
+         width: 20%;
+     }
+ }
+
+ @media screen and (min-width: 1700px) {
+    .mainContainer {
+       width: 85%;
+     }
+     .card {
+         width: 20%;
+     }
+ }
+
+.coola{
+    display: block;
+}
